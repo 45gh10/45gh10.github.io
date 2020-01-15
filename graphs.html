@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!--link rel="stylesheet" href="css/style.css"-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+    <title>Welcome to World Capital Weather</title>
+
+
+
+  </head>
+  <body>
+
+    <!--Nav bar settings-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">World Capital Weather</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="graphs.html">Weather Graphs</a>
+                </li>
+               
+            </nav>
+
+             <div class="container">
+               <!--img class="nav-ufo" src="https://wi-images.condecdn.net/image/doEYpG6Xd87/crop/810/f/weather.jpg" alt="types of weather" height="700" width="2000"--> 
+            </div>
+          
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/11/07/09/quito-ecuador-1.jpg?w968" class="d-block w-100" alt="ec image 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/11/07/09/quito-ecuador-3.jpg?width=1368&height=912&fit=bounds&format=pjpg&auto=webp&quality=70" class="d-block w-100" alt="ec image 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/11/05/18/mashpi-lodge.jpg?width=1368&height=912&fit=bounds&format=pjpg&auto=webp&quality=70" class="d-block w-100" alt="ec image 3">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <br><br><br>
+
+
+
+            <div class="hero text-center">
+            <h2> ¿A dónde vas? - Take a look at where Quito, is located on the map!</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32684412.488864407!2d-84.50256530147094!3d2.1803145110390956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a4002427c9f%3A0x44b991e158ef5572!2sQuito%2C%20Ecuador!5e0!3m2!1sen!2sus!4v1579044786904!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <br><br><br>
+  
+        <div class="hero text-center">
+          <h1>Welcome to Quito, Ecuador! iBienvenido a Quito, Ecuador!</h1>
+          <h2>A city known as the "la mitad del mundo" - the middle of the world. </h2>
+          <h3> Further, the gateway to the Amazon Rainforest!  </h3>
+        </div>
+
+
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+ 
+
+  <script src="quito.js"></script>
+  
+
+  <script src="quito.js"></script>
+  <br><br><br><br><br><br>
+
+
+  
+   <div class="hero text-center">
+    <img src="https://www.iletours.com/wp-content/uploads/2018/05/floresta-banhos-quito-equador.jpg" alt="rainforest" >
+    <div id="plot"></div>
+  <h3> About this graph</h3>
+  <p> This graph displays the temperature forecast for Quito, Ec for 5 days in 3 hour increments starting on Jan 15th. </p>
+  <p> Useful for travelers, and citizens in order to monitor weather current and expected weather paterns.</p>
+  </div>
+  <br><br><br><br><br><br>
+
+    
+    <div class="hero text-center">  
+    <img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/original/b53957a4-9abc-49ee-acf4-ee285f4d2fd2.Women-in-Ecuador_main_1438226891820.jpeg" alt="clothing" >
+    <div id="feels_like"></div>
+      <h3> About this graph</h3>
+  <p> This graph displays the feels like temperature forecast for Quito, Ec for 5 days in 3 hour increments starting on Jan 15th. </p>
+  <p> Useful for travelers, and citizens in order to know how to properly dress for the real weather conditions depending on how it feels.</p>
+  </div>
+  <br><br><br><br><br><br>
+
+
+  
+  <div class="hero text-center">
+    <img src="https://cdn.brainpop.com/science/earthsystem/humidity/screenshot2.png" alt="humidity" >
+  <div id="humidity"></div>  
+  <h3> About this graph</h3>
+  <p> This graph displays the humidity forecast for Quito, Ec for 5 days in 3 hour increments starting on Jan 15th. </p>
+  <p> Useful for determining the concentration of water vapour present in air which is a likely indication that if it will rain or not.</p>
+  </div> 
+  <br><br><br><br><br><br>
+
+
+  
+  <div class="hero text-center">
+    <img src="https://hdwallpapers.imgix.net/freestockphotos-36301559015614uhub1jhq8g.jpg?auto=compress&cs=tinysrgb&dpr=1" alt="cloudiness" height="500" width="700" >
+  <div id="cloudiness"></div>
+  <h3> About this graph</h3>  
+  <p> This graph displays the cloudieness forecast for Quito, Ec for 5 days in 3 hour increments starting on Jan 15th. </p>
+  <p> Useful to schedule outdoor activies and determine if grow lights are needed for your plants on the specific day.</p>
+  <br><br><br><br><br><br>
+  <img src="https://media1.giphy.com/media/l0IyccEqUTO7xy9Ec/giphy.gif" alt="like_gif" >
+  <div id="like_button_container"></div>
+  </div>
+  <br><br><br>
+
+
+  <script src="plots.js"></script>
+      <!-- We will put our React component inside this div. -->
+      <center><div id="like_button_container"></div></center>
+
+      <!-- Load React. -->
+      <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+      <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  
+      <!-- Load our React component. -->
+      <script src="like_button.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  
+    
+    <div class="hero text-center"> 
+      
+    <div id="like_button_container"></div>
+    <br><br><br>
+    <footer>
+      <div>
+        <h4>Quick Access This Website</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+          <li><a href="graphs.html"><span class="icon-long-arrow-right mr-2"></span>Weather Graphs</a></li>
+      </div>
+      <p>Project Contributers: Rodi, Shaheda, Gemma, Solomon and Nha  </p>
+      <p>Jan 2020</p>
+    </footer>
+  </div>
+  
+  </body>
+</html>

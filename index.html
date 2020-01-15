@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!--link rel="stylesheet" href="css/style.css"-->
+
+
+
+    <title>Welcome to World Capital Weather</title>
+
+
+
+  </head>
+  <body>
+
+    <!--Nav bar settings-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">World Capital Weather</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="graphs.html">Weather Graphs</a>
+                </li>
+                </div>
+                </nav>
+              
+             
+            </div>
+
+            <img src="https://image.pbs.org/poster_images/assets/wem4d6rpat6lz2x9tx7n.png" class="d-block w-100" alt="...">
+
+
+            <div class="container">
+              
+                    
+              </div>
+
+          
+
+      <div class="hero text-center">
+        <h1>World Capital Weather Forecast</h1>
+        <p>Take a peek at the min, max and average temperature for 5 days in world capital cities. </p>
+        <p>To see the full dataset download the <a href="/All data/weather_data_update.csv" download>CSV file</a>. </p>
+      </div>
+
+
+      <div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">Filter Search</div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                            <label for="date">Enter a Date</label>
+                            <input class="form-control" id="datetime" type="text" placeholder="01/07/2020">
+                          </li>
+                        <li class="filter list-group-item">  
+                        <label for="city">Enter a Country's Capital City</label>
+                        <input class="form-control" id="city" type="text" placeholder="London">
+                      </li>
+                      <li class="filter list-group-item">  
+                        <label for="city">Temperature Range</label>
+                        <input class="form-control" id="city" type="text" placeholder="50oF to 70oF">
+                      </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10">
+            <div id="table-area" class="">
+              <!--<h1 class="text-center loader" id="loader">Loading...</h1>-->
+              <table id="ufo-table" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="table-head">record_num </th>
+                    <th class="table-head">city_name</th>
+                    <th class="table-head">country</th>
+                    <th class="table-head">city_time</th>
+                    <th class="table-head">five_day_min_avg</th>
+                    <th class="table-head">five_day_max_avg</th>
+                    <th class="table-head">total_avg_all__five_days</th>
+                                        
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  </body>
+</html>
